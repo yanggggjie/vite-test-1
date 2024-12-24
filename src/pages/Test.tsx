@@ -18,11 +18,9 @@ const SwipeToPopup = () => {
     const endX = touch.clientX // 结束点 X
     const endY = touch.clientY // 结束点 Y
 
-    // 计算划线的水平和垂直距离
     const deltaX = endX - startX
     const deltaY = endY - startY
 
-    // 判断划线方向（比如判断从左向右划线且水平位移大于一定阈值，同时垂直位移较小）
     if (Math.abs(deltaX) > 50 && Math.abs(deltaY) < 30 && deltaX > 0) {
       setIsPopupVisible(true) // 显示弹窗
     }
