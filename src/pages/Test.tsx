@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 const SwipeToPopup = () => {
   const [startX, setStartX] = useState(0) // 记录起点的 X 坐标
@@ -78,7 +78,6 @@ const SwipeToPopup = () => {
         </div>
       )}
 
-      {/* 背景遮罩 */}
       {isPopupVisible && (
         <div
           style={{
