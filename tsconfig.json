@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+//    "target": "ESNext",
+    "lib": ["ESNext","ESNext.Array","ES2020", "DOM", "DOM.Iterable","ESNext.Promise"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    /* Linting */
+    "strict": true,
+//    "noUnusedLocals": true,
+//    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+
+
+    //  compile option
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+//    装饰器
+    "target": "es6",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }],
+
+}
